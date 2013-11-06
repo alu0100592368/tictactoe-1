@@ -4,6 +4,9 @@ require 'pp'
 
 settings.port = ENV['PORT'] || 4567
 enable :sessions
+#vamos a escuchar en el puerto 4567, vamos a usar sesions
+
+#Este codigo solo se ejecuta en un entorno de produccion:
 #use Rack::Session::Pool, :expire_after => 2592000
 #set :session_secret, 'super secret'
 
